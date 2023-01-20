@@ -1,3 +1,10 @@
 {% extends "root.html" %}
 {% block content %}
+    <ul>
+    {% for post in post_list %}
+        <li>
+        <div>{{ post.title }}</div>
+        </li>
+    {% endfor %}
+    </ul>
 {% endblock %}
