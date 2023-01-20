@@ -3,7 +3,12 @@
     <ul>
     {% for post in post_list %}
         <li>
-        <div>{{ post.title }}</div>
+        <div class="d-flex row">
+            <img src="{{ post.img.url }}" width="100px" height="150px" style="object-fit: cover;" class="col">
+            <a href="#" class="w-25">
+                <p class="fs-3">{{ post.title }}</p>
+            </a>
+        </div>
         </li>
     {% endfor %}
     </ul>
