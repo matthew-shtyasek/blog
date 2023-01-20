@@ -1,9 +1,11 @@
 {% extends 'root.html' %}
 {% block content %}
-    <h1>{{ pk.title }}</h1>
-    <img src="{{ pk.img.url }}" alt="" width="200px" height="300px">
-    <p>{{ pk.text }}</p>
-    <p>{{ pk.author.username }}</p>
-    <p>Дата: Сохранения-{{ pk.publish_date }}</p>
-    <p>Дата: Последного-{{ pk.change_date }}</p>
+    <div class="ms-4 me-4">
+        <h1>{{ pk.title }}</h1>
+        <img src="{{ pk.img.url }}" alt="" width="200px" height="300px">
+        <p class="fs-4">{{ pk.text }}</p>
+        <p>{{ pk.author.username }}</p>
+        <p>Дата: Сохранения-{{ pk.publish_date }}</p>
+        <p>Дата: Последного-{{ pk.change_date }}</p>
+    </div>
 {% endblock %}
