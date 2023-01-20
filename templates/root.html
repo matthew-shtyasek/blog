@@ -26,9 +26,9 @@
                 <div class="w-100 ps-3 pt-3 pb-3 mb-3 d-inline-flex align-items-center" style="border: 1px solid lightgray; border-radius: 0 0 4px 4px;">
                     <h1>Myblog</h1>
                     <ul class="fs-5 ms-4 h-25 list-group list-group-horizontal">
-                        <li class="list-group-item {% if page == 'home' %} active {% endif  %}"><a href="#" class="off-link-decoration">Home</a></li>
-                        <li class="list-group-item {% if page == 'posts' %} active {% endif  %}"><a href="#" class="off-link-decoration">Posts</a></li>
-                        <li class="list-group-item {% if page == 'info' %} active {% endif  %}"><a href="#" class="off-link-decoration">Info</a></li>
+                        <li class="list-group-item {% if page == 'home' %} active {% endif  %}"><a href="{% url 'info:home' %}" class="off-link-decoration">Home</a></li>
+                        <li class="list-group-item {% if page == 'posts' %} active {% endif  %}"><a href="{% url 'posts:a' %}" class="off-link-decoration">Posts</a></li>
+                        <li class="list-group-item {% if page == 'info' %} active {% endif  %}"><a href="{% url 'info:info' %}" class="off-link-decoration">Info</a></li>
                     </ul>
                 </div>
                 <div class="content">

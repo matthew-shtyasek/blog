@@ -4,6 +4,6 @@ from posts.views import post_list_view, post_id_view
 
 app_name="posts"
 urlpatterns=[
-    path("",post_list_view),
+    path("",post_list_view, name = "a"),
     path("post/<int:pk>", post_id_view, name="post"),
 ]
