@@ -1,13 +1,16 @@
 {% extends "root.html" %}
 {% block content %}
-    <ul>
+    <ul class="ps-3 list-unstyled">
     {% for post in post_list %}
         <li>
-        <div class="d-flex row">
-            <img src="{{ post.img.url }}" width="100px" height="150px" style="object-fit: cover;" class="col">
-            <a href="#" class="w-25">
-                <p class="fs-3">{{ post.title }}</p>
-            </a>
+        <div class="d-inline-flex">
+            <img src="{{ post.img.url }}" width="100px" height="150px" style="object-fit: cover;" class="">
+            <div class="ms-3 mt-0">
+                <a href="{% url 'posts:post' post.pk %}" class="d-block ms-3">
+                    <p class="fs-2">{{ post.title }}</p>
+                </a>
+                <p class="ps-3 pt-0 fs-3">{{ post.text|truncatechars:128 }}</p>
+            </div>
         </div>
         </li>
     {% endfor %}
