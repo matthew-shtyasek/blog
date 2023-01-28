@@ -10,7 +10,7 @@ class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     published = models.BooleanField(default=False) #премодерация
     def __str__(self):
-        return self.text [ :32] + '...'
+        return self.text[:32] + '...'
 
     class Meta:
         ordering = ('-date_of_create', )
