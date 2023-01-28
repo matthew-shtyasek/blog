@@ -12,6 +12,8 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name="Автор")
     likes = models.ManyToManyField(User, related_name="liked_posts", verbose_name="Лайки")
 
+    def __str__(self):
+        return self.title
     class Meta:
         verbose_name = "Пост"
         verbose_name_plural = "Посты"

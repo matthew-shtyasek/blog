@@ -10,4 +10,3 @@ class CommentAdmin(admin.ModelAdmin):
     list_filter = ('date_of_create', 'published')
     list_display = ('author', 'published', 'date_of_create')
     list_editable = ('published', ) # изменять в списке постов опубликовано
-    
