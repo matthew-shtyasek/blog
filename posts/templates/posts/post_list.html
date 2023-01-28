@@ -1,9 +1,9 @@
 {% extends "root.html" %}
 {% block content %}
-    <ul class="ps-3 list-unstyled">
+    <ul class="ps-3 list-unstyled pe-3">
     {% for post in post_list %}
         <li>
-        <div class="d-inline-flex">
+        <div class="d-inline-flex border" style="padding: 10px 0px 0px 10px;">
             <img src="{{ post.img.url }}" width="100px" height="150px" style="object-fit: cover;" class="">
             <div class="ms-3 mt-0">
                 <a href="{% url 'posts:post' post.pk %}" class="d-block ms-3">
