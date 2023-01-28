@@ -5,7 +5,7 @@
     {% for post in post_list %}
         <li>
         <div class="d-inline-flex border" style="padding: 10px 0px 0px 10px;">
-            {% thumbnail post.img "200x300" crop="center" as im  %}
+            {% thumbnail post.img "200x300" crop="center" as im %}
             <a href="{{ post.img.url }}">
                 <img src="{{ im.url }}" width="100px" height="150px" style="object-fit: cover;" class="">
             </a>

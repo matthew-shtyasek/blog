@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'PIL',
     'siteinfo',
     'sorl.thumbnail', #подключили приложение
+    'comment',
 
 ]
 
