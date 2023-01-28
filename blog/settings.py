@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'siteinfo',
     'sorl.thumbnail', #подключили приложение
     'comment',
-
+    'custom_auth',
 ]
 
 MIDDLEWARE = [

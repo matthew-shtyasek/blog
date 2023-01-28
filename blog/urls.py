@@ -22,7 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("posts/", include("posts.urls", namespace="posts")),
     path('about/', include('siteinfo.urls', namespace='info')),
-
+    path('auth/', include('custom_auth.urls', namespace='custom_auth')),
 ]
 if settings.DEBUG:
     urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
