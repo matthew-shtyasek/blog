@@ -10,7 +10,7 @@
     </div>
     <div class="mt-3">
         <h1>Комментарии</h1>
-        <form action="{% url 'posts:post' pk.pk %}" method="get">
+        <form action="{% url 'posts:post' pk.pk %}" method="post">
             {% csrf_token %} <!--защита от подделки межсайтовых запросов-->
             {{ form.as_p }} <!--форма выводится с тегами p-->
             <input class="btn btn-success" value="Отправить" type="submit">
