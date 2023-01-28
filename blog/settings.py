@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'posts',
     'PIL',
     'siteinfo',
+    'sorl.thumbnail', #подключили приложение
+
 ]
 
 MIDDLEWARE = [
