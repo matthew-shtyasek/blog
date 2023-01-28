@@ -8,6 +8,7 @@ class Comment(models.Model):
     date_of_create = models.DateTimeField(auto_now_add=True)
     author = models.CharField(max_length=32)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    published = models.BooleanField(default=False) #премодерация
 
     class Meta:
         ordering = ('-date_of_create', )
